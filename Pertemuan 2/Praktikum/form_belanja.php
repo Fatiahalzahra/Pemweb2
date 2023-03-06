@@ -62,5 +62,9 @@
     <hr class= "col-12">
 
 </body>
-
+<ul><br>Nama Customer: Fatiah Al Zahra </br>
+   <br>Produk Pilihan: TV </br>
+    <br>Jumlah Beli : 2 </br>
+    <br>Total Belanja : 8.400.0000 </br>
+</ul>
 </html>
