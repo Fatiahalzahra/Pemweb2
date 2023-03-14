@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $Domisili = $_POST['domisili'];
     $Email = $_POST['email'];
 
-    echo "NIM: $Nim";
+    echo "<br> NIM: $Nim";
     echo "<br> Nama: $Nama";
     echo "<br> Jenis Kelamin: $Jenis_Kelamin";
     echo "<br> Program Studi: $Prodi";
