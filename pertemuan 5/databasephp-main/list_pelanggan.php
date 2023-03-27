@@ -6,7 +6,7 @@
    $rs = $dbh->query($sql);
 ?>
 
-      <a class="btn btn-success" href="form_pelanggan.php" role="button">Create Pelanggan</a>
+      <a class="btn btn-success" href="form_pelanggan.php" role="button">Create pelanggan</a>
         <table class="table" width="100%" border="1" cellspacing="2" cellpadding="2">
             <thead>
                 <tr>
@@ -15,9 +15,10 @@
                     <th>Nama</th>
                     <th>Jenis Kelamin</th>
                     <th>Tempat Lahir</th>
-                    <th>TanggalLahir</th>
+                    <th>Tanggal Lahir</th>
                     <th>Email</th>
                     <th>Kartu</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,4 +48,4 @@ onclick="if(!confirm('Anda Yakin Hapus Data Produk <?=$row['nama']?>?')) {return
                 } 
                 ?>
             </tbody>
-        </table>  
+        </table>

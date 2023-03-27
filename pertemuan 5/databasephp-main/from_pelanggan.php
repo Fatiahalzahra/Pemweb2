@@ -18,7 +18,7 @@ require_once 'dbkoneksi.php';
     </div>
   </div>
   <div class="form-group row">
-    <label for="nama" class="col-4 col-form-label">Nama Produk</label> 
+    <label for="nama" class="col-4 col-form-label">Nama pelanggan</label> 
     <div class="col-8">
       <div class="input-group">
         <div class="input-group-prepend">
@@ -32,7 +32,7 @@ require_once 'dbkoneksi.php';
     </div>
   </div>
   <div class="form-group row">
-    <label for="jk" class="col-4 col-form-label">Jenis Kelamin</label> 
+    <label for="harga_beli" class="col-4 col-form-label">Jenis Kelamin</label> 
     <div class="col-8">
       <div class="input-group">
         <div class="input-group-prepend">
@@ -41,9 +41,9 @@ require_once 'dbkoneksi.php';
           </div>
         </div> 
         <input id="jk" name="jk" 
-        value="L" type="radio" class="form-control"> Laki-Laki
+        value="L" type="radio" class="form-control">Laki - Laki
         <input id="jk" name="jk" 
-        value="P" type="radio" class="form-control"> Perempuan
+        value="P" type="radio" class="form-control">perempuan
       </div>
     </div>
   </div>
@@ -62,19 +62,22 @@ require_once 'dbkoneksi.php';
     </div>
   </div>
   <div class="form-group row">
-    <label for="min_stok" class="col-4 col-form-label">Tanggal Lahir</label> 
+    <label for="stok" class="col-4 col-form-label">Tanggal Lahir</label> 
     <div class="col-8">
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">
-            <i class="fa fa-arrow-circle-right"></i>
+            <i class="fa fa-arrow-circle-up"></i>
           </div>
-          </div>
-          <input id="tmp_lahir" name="tgl_lahir" value=""
-        type="text" class="form-control">
+        </div> 
+        <input id="tgl_lahir" name="tgl_lahir" value=""
+        type="date" class="form-control">
       </div>
-          <div class="form-group row">
-    <label for="min_stok" class="col-4 col-form-label">Email</label> 
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="min_stok" class="col-4 col-form-label"> Email</label> 
     <div class="col-8">
       <div class="input-group">
         <div class="input-group-prepend">
