@@ -2,19 +2,19 @@
     require_once '../dbkoneksi.php';
 ?>
 <?php 
-   $sql = "SELECT * FROM kartu";
+   $sql = "SELECT * FROM vendor";
    $cards = $dbh->query($sql);
 ?>
 
-      <a class="btn btn-success" href="create.php" role="button">Create Kartu</a>
+      <a class="btn btn-success" href="create.php" role="button">Create Vendor</a>
         <table class="table" width="100%" border="1" cellspacing="2" cellpadding="2">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Kode</th>
+                    <th>Nomor</th>
                     <th>Nama</th>
-                    <th>Diskon</th>
-                    <th>Iuran</th>
+                    <th>Kota</th>
+                    <th>Kontak</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -25,12 +25,12 @@
                 ?>
                     <tr>
                         <td><?=$nomor++?></td>
-                        <td><?=$card['kode']?></td>
+                        <td><?=$card['nomor']?></td>
                         <td><?=$card['nama']?></td>
-                        <td><?=$card['diskon']?></td>
-                        <td><?=$card['iuran']?></td>
+                        <td><?=$card['kota']?></td>
+                        <td><?=$card['kontak']?></td>
                     
- <td>
+<td>
 <a class="btn btn-primary" href="read.php?id=<?=$card['id']?>">Read</a>
 <a class="btn btn-primary" href="edit.php?id=<?=$card['id']?>">Edit</a>
 <a class="btn btn-primary" href="delete.php?iddel=<?=$card['id']?>"

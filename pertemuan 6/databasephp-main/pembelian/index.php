@@ -2,19 +2,21 @@
     require_once '../dbkoneksi.php';
 ?>
 <?php 
-   $sql = "SELECT * FROM kartu";
+   $sql = "SELECT * FROM pembelian";
    $cards = $dbh->query($sql);
 ?>
 
-      <a class="btn btn-success" href="create.php" role="button">Create Kartu</a>
+      <a class="btn btn-success" href="create.php" role="button">Create Pembelian</a>
         <table class="table" width="100%" border="1" cellspacing="2" cellpadding="2">
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Kode</th>
-                    <th>Nama</th>
-                    <th>Diskon</th>
-                    <th>Iuran</th>
+                    <th>Tanggal</th>
+                    <th>nomor</th>
+                    <th>Produk</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Vendor</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -25,10 +27,12 @@
                 ?>
                     <tr>
                         <td><?=$nomor++?></td>
-                        <td><?=$card['kode']?></td>
-                        <td><?=$card['nama']?></td>
-                        <td><?=$card['diskon']?></td>
-                        <td><?=$card['iuran']?></td>
+                        <td><?=$card['tanggal']?></td>
+                        <td><?=$card['nomor']?></td>
+                        <td><?=$card['produk_id']?></td>
+                        <td><?=$card['jumlah']?></td>
+                        <td><?=$card['harga']?></td>
+                        <td><?=$card['vendor_id']?></td>
                     
  <td>
 <a class="btn btn-primary" href="read.php?id=<?=$card['id']?>">Read</a>
