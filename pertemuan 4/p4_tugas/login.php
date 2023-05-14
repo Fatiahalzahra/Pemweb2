@@ -72,7 +72,6 @@
       echo "</script>";
     }
   }
-
   ?>
   <!-- /.login-box -->
 
